@@ -11,7 +11,7 @@ export default function TracksPage() {
       description: "Artificial Intelligence and Machine Learning innovations",
       color: "from-[#1D4ED8] to-[#1D4ED8]/80",
       bgColor: "from-[#1D4ED8]/10 to-[#1D4ED8]/5",
-      image: "/placeholder.svg",
+      image: "/IMG/imgs/images-4.jpeg",
     },
     {
       icon: Database,
@@ -19,7 +19,7 @@ export default function TracksPage() {
       description: "Advanced data processing and analytics solutions",
       color: "from-[#F97316] to-[#F97316]/80",
       bgColor: "from-[#F97316]/10 to-[#F97316]/5",
-      image: "/placeholder.svg",
+      image: "/IMG/6152_a21_main_image.jpg",
     },
     {
       icon: Cloud,
@@ -27,7 +27,7 @@ export default function TracksPage() {
       description: "Connected systems and intelligent applications",
       color: "from-purple-600 to-purple-600/80",
       bgColor: "from-purple-600/10 to-purple-600/5",
-      image: "/placeholder.svg",
+      image: "/IMG/imgs/cloudsec-1024x683.jpeg",
     },
     {
       icon: Shield,
@@ -35,7 +35,7 @@ export default function TracksPage() {
       description: "Security frameworks and decentralized technologies",
       color: "from-red-600 to-red-600/80",
       bgColor: "from-red-600/10 to-red-600/5",
-      image: "/placeholder.svg",
+      image: "/IMG/imgs/everything-you-need-to-know-about-blockchain-security-main-1600.jpg",
     },
     {
       icon: Handshake,
@@ -43,7 +43,7 @@ export default function TracksPage() {
       description: "Bridging research and practical applications",
       color: "from-green-600 to-green-600/80",
       bgColor: "from-green-600/10 to-green-600/5",
-      image: "/placeholder.svg",
+      image: "/IMG/imgs/1709196436961.jpeg",
     },
   ];
 
@@ -60,7 +60,7 @@ export default function TracksPage() {
         "AI in Vision, Speech, and Natural Language Processing",
         "AI in Healthcare, Agriculture & Education",
       ],
-      image: "/placeholder.svg",
+      image: "/IMG/imgs/images-4.jpeg",
     },
     {
       session: "Technical Session 2",
@@ -73,7 +73,7 @@ export default function TracksPage() {
         "Big Data Applications in Business Intelligence & Decision Making",
         "Real-time Data Streaming and Predictive Analytics",
       ],
-      image: "/placeholder.svg",
+      image: "/IMG/6152_a21_main_image.jpg",
     },
     {
       session: "Technical Session 3",
@@ -88,7 +88,7 @@ export default function TracksPage() {
         "Cloud, Edge & Quantum Computing",
         "IoT, Smart Devices & Embedded Systems",
       ],
-      image: "/placeholder.svg",
+      image: "/IMG/imgs/cloudsec-1024x683.jpeg",
     },
     {
       session: "Technical Session 4",
@@ -101,7 +101,7 @@ export default function TracksPage() {
         "Privacy-Preserving Machine Learning",
         "Trustworthy AI and Secure Data Transactions",
       ],
-      image: "/placeholder.svg",
+      image: "/IMG/imgs/everything-you-need-to-know-about-blockchain-security-main-1600.jpg",
     },
     {
       session: "Technical Session 5",
@@ -114,22 +114,22 @@ export default function TracksPage() {
         "Industry-academia collaboration models",
         "Technology transfer and innovation ecosystems",
       ],
-      image: "/placeholder.svg",
+      image: "/IMG/imgs/1709196436961.jpeg",
     },
   ];
 
   return (
     <ConferenceLayout
-      title="Conference Tracks"
+      title="Conference Sessions"
       subtitle="Explore diverse research areas and cutting-edge topics in AI, Data Science, and emerging technologies"
     >
       <div className="max-w-7xl mx-auto space-y-16">
         {/* Main Tracks Overview */}
         <section>
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#1E293B] mb-4">Main Conference Tracks</h2>
+            <h2 className="text-4xl font-bold text-[#1E293B] mb-4">Main Conference Sessions</h2>
             <p className="text-xl text-[#475569] max-w-3xl mx-auto">
-              NCNTAIA 2025 features five specialized tracks covering the latest developments in artificial intelligence,
+              NCNTAIA 2025 features five specialized Sessions covering the latest developments in artificial intelligence,
               data science, and related technologies
             </p>
           </div>
@@ -247,7 +247,7 @@ export default function TracksPage() {
             <CardContent className="p-12">
               <div className="text-center space-y-8">
                 <div>
-                  <h2 className="text-4xl font-bold mb-4">Track Submission Guidelines</h2>
+                  <h2 className="text-4xl font-bold mb-4">Talk Submission Guidelines</h2>
                   <p className="text-xl opacity-90 max-w-3xl mx-auto">
                     Submit your research contributions to the most appropriate track for maximum impact and visibility
                   </p>
@@ -284,15 +284,15 @@ export default function TracksPage() {
                 <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl max-w-4xl mx-auto">
                   <h3 className="text-2xl font-bold mb-4">Cross-Track Submissions Welcome</h3>
                   <p className="text-lg opacity-90 mb-6">
-                    Papers spanning multiple tracks are encouraged. Our organizing committee will assign your submission
-                    to the most suitable track based on the primary research focus and methodology.
+                    Papers spanning multiple Sessions are encouraged. Our organizing committee will assign your submission
+                    to the most suitable Session based on the primary research focus and methodology.
                   </p>
                   <div className="space-y-2 text-sm opacity-80">
                     <p>
                       <strong>Submission Email:</strong> ncntaia-2025@sreenidhi.edu.in
                     </p>
                     <p>
-                      <strong>Questions?</strong> Contact us for guidance on track selection
+                      <strong>Questions?</strong> Contact us for guidance on Session selection
                     </p>
                   </div>
                 </div>

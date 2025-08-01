@@ -74,36 +74,7 @@ export default function SpeakersPage() {
     }
   ];
 
-  const invitedSpeakers = [
-    {
-      name: "Dr. Sarah Johnson",
-      title: "Senior Research Scientist",
-      organization: "Google DeepMind",
-      expertise: ["Reinforcement Learning", "Robotics"],
-      talk: "Advances in Reinforcement Learning for Autonomous Systems"
-    },
-    {
-      name: "Prof. Michael Chen",
-      title: "Professor of Computer Science",
-      organization: "Stanford University",
-      expertise: ["Computer Vision", "Medical AI"],
-      talk: "AI in Healthcare: From Diagnosis to Treatment"
-    },
-    {
-      name: "Dr. Lisa Wang",
-      title: "Principal Data Scientist",
-      organization: "Amazon Web Services",
-      expertise: ["Cloud AI", "MLOps"],
-      talk: "Scaling AI in the Cloud: Best Practices and Challenges"
-    },
-    {
-      name: "Dr. Ravi Krishnan",
-      title: "Research Director",
-      organization: "NVIDIA AI Research",
-      expertise: ["GPU Computing", "Deep Learning"],
-      talk: "Accelerating AI with Advanced Computing Architectures"
-    }
-  ];
+  
 
   return (
     <ConferenceLayout
@@ -168,47 +139,7 @@ export default function SpeakersPage() {
         </section>
 
         {/* Invited Speakers */}
-        <section>
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-slate-800 mb-4">Invited Speakers</h2>
-            <p className="text-lg text-slate-600">
-              Distinguished researchers and industry leaders sharing their expertise
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {invitedSpeakers.map((speaker,) => (
-              <Card key={speaker.name} className="shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <CardHeader>
-                  <CardTitle className="text-xl text-slate-800">{speaker.name}</CardTitle>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <Award className="w-4 h-4" />
-                      <span className="text-sm">{speaker.title}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-slate-600">
-                      <Building className="w-4 h-4" />
-                      <span className="text-sm">{speaker.organization}</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex flex-wrap gap-2">
-                    {speaker.expertise?.map((skill, skillIndex) => (
-                      <Badge key={skillIndex} variant="outline" className="text-xs">
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-slate-800 mb-2 text-sm">Talk:</h4>
-                    <p className="text-slate-700 text-sm font-medium">{speaker.talk}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-
+       
         {/* Call for Speakers */}
         <section>
           <Card className="shadow-lg bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200">

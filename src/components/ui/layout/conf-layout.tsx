@@ -101,6 +101,7 @@ export default function ConferenceLayout({
                                 { name: "Dates", path: "/dates" },
                                 { name: "Committee", path: "/committee" },
                                 { name: "Brochure", path: "/brochure" },
+                                { name: "Sponsors", path: "/sponsorship" },
                             ].map((item) => (
                                 <Link
                                     key={item.path}
@@ -166,22 +167,37 @@ export default function ConferenceLayout({
                             <h4 className="font-semibold mb-4">Contact</h4>
                             <p className="text-slate-300">
                                 Email: ncntaia-2025@sreenidhi.edu.in
+                                <br />
+                                Call : +91 96664 44100
+                                <br />
+                                      +91 99126 67488
                             </p>
                         </div>
 
                         {/* Right Block - Organized By */}
                         <div>
-                            <h4 className="font-semibold mb-4">Organized By</h4>
-                            <p className="text-slate-300">
-                                Sreenidhi Institute of Science & Technology
-                                <br />
-                                Yamnampet, Ghatkesar Hyderabad - 501 301,
-                                <br />
-                                Telangana.
-                                <br />
-                                info@sreenidhi.edu.in
-                            </p>
-                        </div>
+  <h4 className="font-semibold mb-4">Organized By</h4>
+  <p className="text-slate-300">
+    Sreenidhi Institute of Science & Technology
+    <br />
+    Yamnampet, Ghatkesar, Hyderabad - 501301,
+    <br />
+    Telangana, India.
+    <br />
+    <a href="mailto:ncntaia-2025@sreenidhi.edu.in" className="underline text-orange-400 hover:text-orange-300">
+      ncntaia-2025@sreenidhi.edu.in
+    </a>
+    <br />
+    <a
+      href="https://maps.google.com/?q=Sreenidhi+Institute+of+Science+and+Technology"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline text-blue-400 hover:text-blue-300"
+    >
+      View Location on Map
+    </a>
+  </p>
+</div>
                     </div>
                 </div>
             </footer>

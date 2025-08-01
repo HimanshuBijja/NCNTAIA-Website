@@ -67,6 +67,9 @@ export default function Header() {
                 <div className="flex items-center space-x-1 text-slate-700 hover:text-blue-600 cursor-pointer">
                   <span className="font-medium">Brochure</span>
                 </div>
+                <div className="flex items-center space-x-1 text-slate-700 hover:text-blue-600 cursor-pointer">
+                  <span className="font-medium">Sponsers</span>
+                </div>
               </nav>
 
               {/* CTA Button */}
