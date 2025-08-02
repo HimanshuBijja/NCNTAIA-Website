@@ -5,7 +5,8 @@ import feedback from "@/lib/db";
 export async function POST(req: NextRequest) {
     const body = await req.json();
     console.log(body);
-    const result = await formSchema.safeParse(body);
+    const result = formSchema.safeParse(body.formData);
+    console.log(result);
     if (!result.success) {
         return NextResponse.json({
             message: "Form submission failed",
@@ -14,14 +15,15 @@ export async function POST(req: NextRequest) {
     }
     try {
         const response = await feedback.create({
-            firstname: body.firstname,
-            lastname: body.lastname,
-            email: body.email,
-            mobile: body.mobile,
-            institution: body.institution,
-            designation: body.designation,
-            state: body.state,
-            country: body.country,
+            firstname: result.data.firstname,
+            lastname: result.data.lastname,
+            email: result.data.email,
+            mobile: result.data.mobile,
+            institution: result.data.institution,
+            abstract: result.data.abstract,
+            keywords: result.data.keywords,
+            inperson: result.data.inperson,
+            accept_terms: result.data.accept_terms,
         });
         return NextResponse.json({
             message: "Form submitted successfully",

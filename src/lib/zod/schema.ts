@@ -6,8 +6,8 @@ export const formSchema = z.object({
     email: z.string().email("Invalid email address"),
     mobile: z.string().min(10, "Mobile number must be at least 10 characters long"),
     institution: z.string().min(2, "Institution name must be at least 2 characters long"),
-    designation: z.string().min(1, "Please select a designation"),
-    state: z.string().min(2, "State must be at least 2 characters long"),
-    country: z.string().min(2, "Country must be at least 2 characters long"),
+    abstract: z.string().min(1, "Please enter an abstract"),
     keywords: z.string().min(1, "Please enter at least one keyword"),
+    inperson: z.boolean(),
+    accept_terms: z.boolean(),
 });

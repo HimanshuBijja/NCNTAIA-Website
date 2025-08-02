@@ -16,9 +16,10 @@ const FeedbackSchema = new mongoose.Schema({
     email: { type: String, required: true },
     mobile: { type: Number, required: true },
     institution: { type: String, required: true },
-    designation: { type: String, required: true },
-    state: { type: String, required: true },
-    country: { type: String, required: true },
+    abstract: { type: String, required: true },
+    keywords: { type: [String], required: true },
+    inperson: { type: Boolean, required: true },
+    accept_terms: { type: Boolean, required: true },
 })
 
 const feedback = mongoose.models.Feedback || mongoose.model("Feedback", FeedbackSchema);
