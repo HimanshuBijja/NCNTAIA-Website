@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     console.log(body);
     const result = formSchema.safeParse(body.formData);
-    console.log(result);
+    // console.log(result);
     if (!result.success) {
         return NextResponse.json({
             message: "Form submission failed",

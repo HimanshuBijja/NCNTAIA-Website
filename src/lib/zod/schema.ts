@@ -7,7 +7,7 @@ export const formSchema = z.object({
     mobile: z.string().min(10, "Mobile number must be at least 10 characters long"),
     institution: z.string().min(2, "Institution name must be at least 2 characters long"),
     abstract: z.string().min(1, "Please enter an abstract"),
-    keywords: z.string().min(1, "Please enter at least one keyword"),
-    inperson: z.boolean(),
-    accept_terms: z.boolean(),
+    keywords: z.array(z.string().min(3, "Please enter at least 3 keywords").max(7, "Please enter at most 7 keywords")),
+    inperson: z.boolean().optional(),
+    accept_terms: z.boolean(),  
 });

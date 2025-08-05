@@ -187,10 +187,11 @@ const AbstractForm: React.FC = () => {
         
         try {
             const response = await axios.post("/api/submit_form", {formData});
-            // console.log(response);
+            console.log("data", response.status);
+            (response.status === 200) ? alert("Submitted!") : alert("Form submission failed");
             await new Promise(resolve => setTimeout(resolve, 2000));
             // console.log("Form submitted successfully:", formData);
-            alert("Form submitted successfully!");
+            // alert("Form submitted successfully!");
         } catch (error) {
             console.error("Error submitting form:", error);
             alert("Error submitting form. Please try again.");
@@ -466,5 +467,13 @@ const LabelIcon: React.FC<LabelIconProps> = ({ children, className = "" }) => (
         {children}
     </div>
 );
+
+const FormSubmission = () => {
+    return (
+        <div  className=" absolute top-10 right-10">
+            Form submitted Successfully
+        </div>
+    )
+}
 
 export default AbstractForm;
